@@ -1,5 +1,11 @@
 # LLT::Constants
 
+[![Version](http://allthebadges.io/latin-language-toolkit/llt-constants/badge_fury.png)](http://allthebadges.io/latin-language-toolkit/llt-constants/badge_fury)
+[![Build Status](https://travis-ci.org/latin-language-toolkit/llt-constants.png?branch=master)](https://travis-ci.org/latin-language-toolkit/llt-constants)
+[![Dependencies](http://allthebadges.io/latin-language-toolkit/llt-constants/gemnasium.png)](http://allthebadges.io/latin-language-toolkit/llt-constants/gemnasium)
+[![Coverage](https://coveralls.io/repos/latin-language-toolkit/llt-constants/badge.png?branch=master)](https://coveralls.io/r/latin-language-toolkit/llt-constants?branch=master)
+[![Code Climate](https://codeclimate.com/github/latin-language-toolkit/llt-constants.png)](https://codeclimate.com/github/latin-language-toolkit/llt-constants)
+
 LLT::Constants contains Latin infixes, inflectional endings and Latin
 phonemes.
 
