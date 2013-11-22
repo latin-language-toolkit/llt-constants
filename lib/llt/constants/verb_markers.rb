@@ -1,0 +1,75 @@
+#encoding: UTF-8
+
+module LLT
+  module Constants
+    module Markers
+
+      class Verb
+
+        THEMATIC_I = "i"
+        THEMATIC_E = "e"
+        THEMATIC_U = "u"
+
+        PRAESENS_CONIUNCTIVUS_A = "e"
+        PRAESENS_CONIUNCTIVUS = "a"
+        PRAESENS_CONIUNCTIVUS_IRREGULAR = "i"
+
+        FUTURUM_A = "b"
+        FUTURUM_E = FUTURUM_A
+        FUTURUM_C = "e"
+        FUTURUM_I = FUTURUM_C
+        FUTURUM_M = FUTURUM_C
+        FUTURUM_C_1 = "a"
+        FUTURUM_M_1 = FUTURUM_C_1
+
+        IMPERFECTUM_INDICATIVUS = "ba"
+        IMPERFECTUM_INDICATIVUS_ESSE = "a"
+        IMPERFECTUM_CONIUNCTIVUS = "re"
+        IMPERFECTUM_CONIUNCTIVUS_LE = "le"
+        IMPERFECTUM_CONIUNCTIVUS_SE = "se"
+
+        STEM_ESSE_ES = "es"
+        STEM_ESSE_S  = "s"
+        STEM_ESSE_E  = "e"
+
+        PERFECTUM_SUFFIX_1 = "er"
+        PERFECTUM_SUFFIX_2 = "is"
+
+        PLUSQUAMPERFECTUM_INDICATIVUS = "a"
+        PLUSQUAMPERFECTUM_CONIUNCTIVUS = "se"
+
+        PERFECTUM_CONIUNCTIVUS = "i"
+
+        FUTURUM_EXACTUM_INDICATIVUS = "i"
+
+        #infinte 
+        PRAESENS_INFINITIVUM_ACTIVUM = "re"
+        PRAESENS_INFINITIVUM_PASSIVUM_A = "ri"
+        PRAESENS_INFINITIVUM_PASSIVUM_E = PRAESENS_INFINITIVUM_PASSIVUM_A
+        PRAESENS_INFINITIVUM_PASSIVUM_I = PRAESENS_INFINITIVUM_PASSIVUM_A
+        PRAESENS_INFINITIVUM_PASSIVUM_C = "i"
+        PRAESENS_INFINITIVUM_PASSIVUM_M = PRAESENS_INFINITIVUM_PASSIVUM_C
+
+        PERFECTUM_INFINITIVUM_ACTIVUM = PERFECTUM_SUFFIX_2 + "se"
+
+        GERUNDIUM = "nd"
+        GERUNDIVUM = GERUNDIUM
+        PARTICIPIUM_PRAESENS_SIGN = "nt"
+        PARTICIPIUM_PRAESENS_SIGN_NOMINATIVE = "n"
+        PARTICIPIUM_FUTURUM = "ur"
+        SUPINUM_1 = "um"
+        SUPINUM_2 = "u"
+
+
+        class Metrical < Verb
+          #infinite
+          PRAESENS_INFINITIVUM_PASSIVUM_A = "rĭ"
+          PRAESENS_INFINITIVUM_PASSIVUM_C = "ĭ"
+          PARTICIPIUM_FUTURUM = "ūr"
+          SUPINUM_2 = "ū"
+        end
+      end
+
+    end
+  end
+end
