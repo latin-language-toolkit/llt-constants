@@ -8,6 +8,9 @@ module LLT
       DATES_PIPED = DATES.join('|')
 
       ALL_ABBRS_PIPED = "#{NAMES_PIPED}|#{DATES_PIPED}"
+
+      APOSTROPHES = %w{ po min vin potin satin scin tun }
+      APOSTROPHES_PIPED = APOSTROPHES.join('|')
     end
   end
 end
