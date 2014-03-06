@@ -5,34 +5,34 @@ module LLT
     module Endings
 
       class Noun
-        A  = [:a, :ae, :ae, :am, :a, :a, :ae, :arum, :is, :as, :ae, :is]
-        O  = [:us, :i, :o, :um, :e, :o, :i, :orum, :is, :os, :i, :is]
-        ON = [:um, :i, :o, :um, :um, :o, :a, :orum, :is, :a, :a, :is]
-        E  = [:es, :ei, :ei, :em, :es, :e, :es, :erum, :ebus, :es, :es, :ebus]
-        U  = [:us, :us, :ui, :um, :us, :u, :us, :uum, :ibus, :us, :us, :ibus]
-        UN = [:u, :us, :u, :u, :u, :u, :ua, :uum, :ibus, :ua, :ua, :ibus]
-        C  = [nil, :is, :i, :em, nil, :e, :es, :um, :ibus, :es, :es, :ibus]
-        CN = [nil, :is, :i, nil, nil, :e, :a, :um, :ibus, :a, :a, :ibus]
-        M  = [nil, :is, :i, :em, nil, :e, :es, :ium, :ibus, :es, :es, :ibus]
-        I  = [:is, :is, :i, :im, :is, :i, :es, :ium, :ibus, :es, :es, :ibus]
-        IN = [:e, :is, :i, :e, :e, :i, :ia, :ium, :ibus, :ia, :ia, :ibus]
-        IRREGULARS = [nil, nil, nil, nil, nil, nil, nil, nil, :bus, nil, nil, :bus]
+        A  = ['a', 'ae', 'ae', 'am', 'a', 'a', 'ae', 'arum', 'is', 'as', 'ae', 'is']
+        O  = ['us', 'i', 'o', 'um', 'e', 'o', 'i', 'orum', 'is', 'os', 'i', 'is']
+        ON = ['um', 'i', 'o', 'um', 'um', 'o', 'a', 'orum', 'is', 'a', 'a', 'is']
+        E  = ['es', 'ei', 'ei', 'em', 'es', 'e', 'es', 'erum', 'ebus', 'es', 'es', 'ebus']
+        U  = ['us', 'us', 'ui', 'um', 'us', 'u', 'us', 'uum', 'ibus', 'us', 'us', 'ibus']
+        UN = ['u', 'us', 'u', 'u', 'u', 'u', 'ua', 'uum', 'ibus', 'ua', 'ua', 'ibus']
+        C  = [nil, 'is', 'i', 'em', nil, 'e', 'es', 'um', 'ibus', 'es', 'es', 'ibus']
+        CN = [nil, 'is', 'i', nil, nil, 'e', 'a', 'um', 'ibus', 'a', 'a', 'ibus']
+        M  = [nil, 'is', 'i', 'em', nil, 'e', 'es', 'ium', 'ibus', 'es', 'es', 'ibus']
+        I  = ['is', 'is', 'i', 'im', 'is', 'i', 'es', 'ium', 'ibus', 'es', 'es', 'ibus']
+        IN = ['e', 'is', 'i', 'e', 'e', 'i', 'ia', 'ium', 'ibus', 'ia', 'ia', 'ibus']
+        IRREGULARS = [nil, nil, nil, nil, nil, nil, nil, nil, 'bus', nil, nil, 'bus']
 
         class Metrical < Noun
-          A  = [:ă, :ae, :ae, :ăm, :ă, :ā, :ae, :ārŭm, :īs, :ās, :ae, :īs]
-          O  = [:ŭs, :ī, :ō, :ŭm, :ĕ, :ō, :ī, :ōrŭm, :īs, :ōs, :ī, :īs]
-          ON = [:ŭm, :ī, :ō, :ŭm, :ŭm, :ō, :ă, :ōrŭm, :īs, :ă, :ă, :īs]
+          A  = ['ă', 'ae', 'ae', 'ăm', 'ă', 'ā', 'ae', 'ārŭm', 'īs', 'ās', 'ae', 'īs']
+          O  = ['ŭs', 'ī', 'ō', 'ŭm', 'ĕ', 'ō', 'ī', 'ōrŭm', 'īs', 'ōs', 'ī', 'īs']
+          ON = ['ŭm', 'ī', 'ō', 'ŭm', 'ŭm', 'ō', 'ă', 'ōrŭm', 'īs', 'ă', 'ă', 'īs']
           #attention: if final sound of stem is vowel 2sg and 3sg e is long, else short: see diēī but rĕī
-          EL = [:ēs, :ēī, :ēī, :ĕm, :ēs, :ē, :ēs, :ērŭm, :ēbŭs, :ēs, :ēs, :ēbŭs]
-          ES = [:ēs, :ĕī, :ĕī, :ĕm, :ēs, :ē, :ēs, :ērŭm, :ēbŭs, :ēs, :ēs, :ēbŭs]
-          U  = [:ŭs, :ūs, :ŭī, :ŭm, :ŭs, :ū, :ūs, :ŭŭm, :ĭbŭs, :ūs, :ūs, :ĭbŭs]
-          UN = [:ū, :ūs, :ū, :ū, :ū, :ū, :ŭă, :ŭŭm, :ĭbŭs, :ŭă, :ŭă, :ĭbŭs]
-          C  = [nil, :ĭs, :ī, :ĕm, nil, :ĕ, :ēs, :ŭm, :ĭbŭs, :ēs, :ēs, :ĭbŭs]
-          CN = [nil, :ĭs, :ī, nil, nil, :ĕ, :ă, :ŭm, :ĭbŭs, :ă, :ă, :ĭbŭs]
-          M  = [nil, :ĭs, :ī, :ĕm, nil, :ĕ, :ēs, :ĭŭm, :ĭbŭs, :ēs, :ēs, :ĭbŭs]
-          I  = [:ĭs, :ĭs, :ī, :ĭm, :ĭs, :ī, :ēs, :ĭŭm, :ĭbŭs, :ēs, :ēs, :ĭbŭs]
-          IN = [:ĕ, :ĭs, :ī, :ĕ, :ĕ, :ī, :ĭă, :ĭŭm, :ĭbŭs, :ĭă, :ĭă, :ĭbŭs]
-          IRREGULARS = [nil, nil, nil, nil, nil, nil, nil, nil, :bŭs, nil, nil, :bŭs]
+          EL = ['ēs', 'ēī', 'ēī', 'ĕm', 'ēs', 'ē', 'ēs', 'ērŭm', 'ēbŭs', 'ēs', 'ēs', 'ēbŭs']
+          ES = ['ēs', 'ĕī', 'ĕī', 'ĕm', 'ēs', 'ē', 'ēs', 'ērŭm', 'ēbŭs', 'ēs', 'ēs', 'ēbŭs']
+          U  = ['ŭs', 'ūs', 'ŭī', 'ŭm', 'ŭs', 'ū', 'ūs', 'ŭŭm', 'ĭbŭs', 'ūs', 'ūs', 'ĭbŭs']
+          UN = ['ū', 'ūs', 'ū', 'ū', 'ū', 'ū', 'ŭă', 'ŭŭm', 'ĭbŭs', 'ŭă', 'ŭă', 'ĭbŭs']
+          C  = [nil, 'ĭs', 'ī', 'ĕm', nil, 'ĕ', 'ēs', 'ŭm', 'ĭbŭs', 'ēs', 'ēs', 'ĭbŭs']
+          CN = [nil, 'ĭs', 'ī', nil, nil, 'ĕ', 'ă', 'ŭm', 'ĭbŭs', 'ă', 'ă', 'ĭbŭs']
+          M  = [nil, 'ĭs', 'ī', 'ĕm', nil, 'ĕ', 'ēs', 'ĭŭm', 'ĭbŭs', 'ēs', 'ēs', 'ĭbŭs']
+          I  = ['ĭs', 'ĭs', 'ī', 'ĭm', 'ĭs', 'ī', 'ēs', 'ĭŭm', 'ĭbŭs', 'ēs', 'ēs', 'ĭbŭs']
+          IN = ['ĕ', 'ĭs', 'ī', 'ĕ', 'ĕ', 'ī', 'ĭă', 'ĭŭm', 'ĭbŭs', 'ĭă', 'ĭă', 'ĭbŭs']
+          IRREGULARS = [nil, nil, nil, nil, nil, nil, nil, nil, 'bŭs', nil, nil, 'bŭs']
         end
 
         def self.get_ending_for_inflection_class(inflection_class)
@@ -72,19 +72,19 @@ module LLT
         ON = Noun::ON
         CMF = Noun::C
         CN  = Noun::CN
-        MMF = [nil, :is, :i, :em, nil, :i, :es, :ium, :ibus, :es, :es, :ibus]
-        MN  = [nil, :is, :i, nil, nil, :i, :ia, :ium, :ibus, :ia, :ia, :ibus]
-        PRM = [:us, :ius, :i, :um, :e, :o, :i, :orum, :is, :os, :i, :is]
-        PRF = [:a, :ius, :i, :am, :a, :a, :ae, :arum, :is, :as, :ae, :is]
-        PRN = [:um, :ius, :i, :um, :um, :o, :a, :orum, :is, :a, :a, :is]
+        MMF = [nil, 'is', 'i', 'em', nil, 'i', 'es', 'ium', 'ibus', 'es', 'es', 'ibus']
+        MN  = [nil, 'is', 'i', nil, nil, 'i', 'ia', 'ium', 'ibus', 'ia', 'ia', 'ibus']
+        PRM = ['us', 'ius', 'i', 'um', 'e', 'o', 'i', 'orum', 'is', 'os', 'i', 'is']
+        PRF = ['a', 'ius', 'i', 'am', 'a', 'a', 'ae', 'arum', 'is', 'as', 'ae', 'is']
+        PRN = ['um', 'ius', 'i', 'um', 'um', 'o', 'a', 'orum', 'is', 'a', 'a', 'is']
 
         AO = Noun::O + Noun::A + Noun::ON
         MIXED = MMF + MMF + MN
         MIXED_1 = MIXED
         MIXED_2 = MIXED.each_with_index.map do |el, i|
           case i.to_s
-          when /^(0|4|12|16)$/ then :is
-          when /^(24|27|28)$/  then :e
+          when /^(0|4|12|16)$/ then 'is'
+          when /^(24|27|28)$/  then 'e'
           else el
           end
         end
@@ -103,19 +103,19 @@ module LLT
           ON = Noun::Metrical::ON
           CMF = Noun::Metrical::C
           CN  = Noun::Metrical::CN
-          MMF = [nil, :ĭs, :ī, :ĕm, nil, :ī, :ēs, :ĭŭm, :ĭbŭs, :ēs, :ēs, :ĭbŭs]
-          MN  = [nil, :ĭs, :ī, nil, nil, :ī, :ĭa, :ĭŭm, :ĭbŭs, :ĭa, :ĭa, :ĭbŭs]
-          PRM = [:ŭs, :īŭs, :ī, :ŭm, :ĕ, :ō, :ī, :ōrŭm, :īs, :ōs, :ī, :īs]
-          PRF = [:ă, :īŭs, :ī, :ăm, :ă, :ā, :ae, :ārum, :īs, :ās, :ae, :īs]
-          PRN = [:ŭm, :īŭs, :ī, :ŭm, :ŭm, :ō, :ă, :ōrŭm, :īs, :ă, :ă, :īs]
+          MMF = [nil, 'ĭs', 'ī', 'ĕm', nil, 'ī', 'ēs', 'ĭŭm', 'ĭbŭs', 'ēs', 'ēs', 'ĭbŭs']
+          MN  = [nil, 'ĭs', 'ī', nil, nil, 'ī', 'ĭa', 'ĭŭm', 'ĭbŭs', 'ĭa', 'ĭa', 'ĭbŭs']
+          PRM = ['ŭs', 'īŭs', 'ī', 'ŭm', 'ĕ', 'ō', 'ī', 'ōrŭm', 'īs', 'ōs', 'ī', 'īs']
+          PRF = ['ă', 'īŭs', 'ī', 'ăm', 'ă', 'ā', 'ae', 'ārum', 'īs', 'ās', 'ae', 'īs']
+          PRN = ['ŭm', 'īŭs', 'ī', 'ŭm', 'ŭm', 'ō', 'ă', 'ōrŭm', 'īs', 'ă', 'ă', 'īs']
 
           AO = Noun::Metrical::O + Noun::Metrical::A + Noun::Metrical::ON
           MIXED = MMF + MMF + MN
           MIXED_1 = MIXED
           MIXED_2 = MIXED.each_with_index.map do |el, i|
             case i.to_s
-            when /^(0|4|12|16)$/ then :ĭs
-            when /^(24|27|28)$/  then :ĕ
+            when /^(0|4|12|16)$/ then 'ĭs'
+            when /^(24|27|28)$/  then 'ĕ'
             else el
             end
           end
@@ -177,50 +177,50 @@ module LLT
       end
 
       class Pronoun
-        HIC  = [:i, :ius, :i, :un, nil, :o, :i, :orum, :is, :os, nil, :is]
-        HAEC = [:ae, :ius, :i, :an, nil, :a, :ae, :arum, :is, :as, nil, :is]
-        HOC  = [:o, :ius, :i, :o, nil, :o, :ae, :orum, :is, :ae, nil, :is]
+        HIC  = ['i', 'ius', 'i', 'un', nil, 'o', 'i', 'orum', 'is', 'os', nil, 'is']
+        HAEC = ['ae', 'ius', 'i', 'an', nil, 'a', 'ae', 'arum', 'is', 'as', nil, 'is']
+        HOC  = ['o', 'ius', 'i', 'o', nil, 'o', 'ae', 'orum', 'is', 'ae', nil, 'is']
 
         #ille + iste
-        ILLE  = [:e, :ius, :i, :um, nil, :o, :i, :orum, :is, :os, nil, :is]
-        ILLA  = [:a, :ius, :i, :am, nil, :a, :ae, :arum, :is, :as, nil, :is]
-        ILLUD = [:ud, :ius, :i, :ud, nil, :o, :a, :orum, :is, :a, nil, :is]
+        ILLE  = ['e', 'ius', 'i', 'um', nil, 'o', 'i', 'orum', 'is', 'os', nil, 'is']
+        ILLA  = ['a', 'ius', 'i', 'am', nil, 'a', 'ae', 'arum', 'is', 'as', nil, 'is']
+        ILLUD = ['ud', 'ius', 'i', 'ud', nil, 'o', 'a', 'orum', 'is', 'a', nil, 'is']
 
         #ipse
         IPSE = ILLE
         IPSA = ILLA
-        IPSUM = [:um, :ius, :i, :um, nil, :o, :a, :orum, :is, :a, nil, :is]
+        IPSUM = ['um', 'ius', 'i', 'um', nil, 'o', 'a', 'orum', 'is', 'a', nil, 'is']
 
         #is
-        IS  = [:s, :ius, :i, :um, nil, :o, :i, :orum, :is, :os, nil, :is]
+        IS  = ['s', 'ius', 'i', 'um', nil, 'o', 'i', 'orum', 'is', 'os', nil, 'is']
         EA  = ILLA
-        ID  = [:d, :ius, :i, :d, nil, :o, :a, :orum, :is, :a, nil, :is]
+        ID  = ['d', 'ius', 'i', 'd', nil, 'o', 'a', 'orum', 'is', 'a', nil, 'is']
 
         #idem
-        IDEM   = [nil, :ius, :i, :un, nil, :o, :i, :orun, :is, :os, nil, :is]
-        EADEM  = [:a, :ius, :i, :an, nil, :a, :ae, :arun, :is, :as, nil, :is]
-        IDEM_N = [nil, :ius, :i, nil, nil, :o, :a, :orun, :is, :a, nil, :is]
+        IDEM   = [nil, 'ius', 'i', 'un', nil, 'o', 'i', 'orun', 'is', 'os', nil, 'is']
+        EADEM  = ['a', 'ius', 'i', 'an', nil, 'a', 'ae', 'arun', 'is', 'as', nil, 'is']
+        IDEM_N = [nil, 'ius', 'i', nil, nil, 'o', 'a', 'orun', 'is', 'a', nil, 'is']
 
         #qui
-        QUI  = [:i, :ius, :i, :em, nil, :o, :i, :orum, :ibus, :os, nil, :ibus]
-        QUAE = [:ae, :ius, :i, :am, nil, :a, :ae, :arum, :ibus, :as, nil, :ibus]
-        QUOD = [:od, :ius, :i, :od, nil, :o, :ae, :orum, :ibus, :ae, nil, :ibus]
-        QUA  = [:a, :ius, :i, :am, nil, :a, :ae, :arum, :ibus, :as, nil, :ibus]
+        QUI  = ['i', 'ius', 'i', 'em', nil, 'o', 'i', 'orum', 'ibus', 'os', nil, 'ibus']
+        QUAE = ['ae', 'ius', 'i', 'am', nil, 'a', 'ae', 'arum', 'ibus', 'as', nil, 'ibus']
+        QUOD = ['od', 'ius', 'i', 'od', nil, 'o', 'ae', 'orum', 'ibus', 'ae', nil, 'ibus']
+        QUA  = ['a', 'ius', 'i', 'am', nil, 'a', 'ae', 'arum', 'ibus', 'as', nil, 'ibus']
 
         #quidam - adj
-        QUIDAM  = [:i, :ius, :i, :en, nil, :o, :i, :orun, :ibus, :os, nil, :ibus]
-        QUAEDAM = [:ae, :ius, :i, :an, nil, :a, :ae, :arun, :ibus, :as, nil, :ibus]
-        QUODDAM = [:od, :ius, :i, :od, nil, :o, :ae, :orun, :ibus, :ae, nil, :ibus]
+        QUIDAM  = ['i', 'ius', 'i', 'en', nil, 'o', 'i', 'orun', 'ibus', 'os', nil, 'ibus']
+        QUAEDAM = ['ae', 'ius', 'i', 'an', nil, 'a', 'ae', 'arun', 'ibus', 'as', nil, 'ibus']
+        QUODDAM = ['od', 'ius', 'i', 'od', nil, 'o', 'ae', 'orun', 'ibus', 'ae', nil, 'ibus']
 
         #quis
-        QUIS = [:is, :ius, :i, :em, nil, :o, :i, :orum, :ibus, :os, nil, :ibus]
+        QUIS = ['is', 'ius', 'i', 'em', nil, 'o', 'i', 'orum', 'ibus', 'os', nil, 'ibus']
         #QUAE
-        QUID = [:id, :ius, :i, :id, nil, :o, :ae, :orum, :ibus, :ae, nil, :ibus]
+        QUID = ['id', 'ius', 'i', 'id', nil, 'o', 'ae', 'orum', 'ibus', 'ae', nil, 'ibus']
 
         #uter + uterque
-        UTER = [nil, :ius, :i, :um, nil, :o, :i, :orum, :is, :os, nil, :is]
-        UTRA = [:a, :ius, :i, :am, nil, :a, :ae, :arum, :is, :as, nil, :is]
-        UTRUM = [:um, :ius, :i, :um, nil, :o, :a, :orum, :is, :a, nil, :is]
+        UTER = [nil, 'ius', 'i', 'um', nil, 'o', 'i', 'orum', 'is', 'os', nil, 'is']
+        UTRA = ['a', 'ius', 'i', 'am', nil, 'a', 'ae', 'arum', 'is', 'as', nil, 'is']
+        UTRUM = ['um', 'ius', 'i', 'um', nil, 'o', 'a', 'orum', 'is', 'a', nil, 'is']
 
         def self.get(pronoun_type)
           qui_adj = QUI + QUAE + QUOD
@@ -273,16 +273,16 @@ module LLT
 
 
       class Ppa
-        MMFE = [:s, :is, :i, :em, :s, :e, :es, :ium, :ibus, :es, :es, :ibus]
-        MNE  = [:s, :is, :i, :s, :s, :e, :ia, :ium, :ibus, :ia, :ia, :ibus]
+        MMFE = ['s', 'is', 'i', 'em', 's', 'e', 'es', 'ium', 'ibus', 'es', 'es', 'ibus']
+        MNE  = ['s', 'is', 'i', 's', 's', 'e', 'ia', 'ium', 'ibus', 'ia', 'ia', 'ibus']
 
         def self.get(*args)
           MMFE + MMFE + MNE
         end
 
         class Metrical < Ppa
-          MMFE = [:s, :ĭs, :ī, :ĕm, :s, :ĕ, :ēs, :ĭŭm, :ĭbŭs, :ēs, :ēs, :ĭbŭs]
-          MNE  = [:s, :ĭs, :ī, :s, :s, :ĕ, :ĭa, :ĭŭm, :ĭbŭs, :ĭa, :ĭa, :ĭbŭs]
+          MMFE = ['s', 'ĭs', 'ī', 'ĕm', 's', 'ĕ', 'ēs', 'ĭŭm', 'ĭbŭs', 'ēs', 'ēs', 'ĭbŭs']
+          MNE  = ['s', 'ĭs', 'ī', 's', 's', 'ĕ', 'ĭa', 'ĭŭm', 'ĭbŭs', 'ĭa', 'ĭa', 'ĭbŭs']
         end
       end
 
@@ -311,26 +311,26 @@ module LLT
       end
 
       class Gerund
-        GERUND = %i{ i o um o }
+        GERUND = %w{ i o um o }
 
         def self.get(*args)
           GERUND
         end
 
         class Metrical < Gerund
-          GERUND  = [:ī, :ō, :ŭm, :ō]
+          GERUND  = %w{ ī ō ŭm ō }
         end
       end
 
       class Supinum
-        SUPINUM = %i{ u um u }
+        SUPINUM = %w{ u um u }
 
         def self.get(*args)
           SUPINUM
         end
 
         class Metrical < Supinum
-          SUPINUM = %i{ ū ŭm ū }
+          SUPINUM = %w{ ū ŭm ū }
         end
       end
     end
