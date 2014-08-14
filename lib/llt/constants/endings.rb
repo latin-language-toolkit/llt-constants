@@ -137,11 +137,12 @@ module LLT
                         :AO
                       else # positivus - or nil if someone has forgotten to provide a value
                         case [inflection_class, number_of_endings]
-                        when [1, 3] then :AO
-                        when [3, 1] then :MIXED_1
-                        when [3, 2] then :MIXED_2
-                        when [3, 3] then :MIXED_3
-                        when [5, 3] then :PRONOMINAL
+                        when [1,  3] then :AO
+                        when [3,  1] then :CONSONANTIC
+                        when [33, 1] then :MIXED_1
+                        when [33, 2] then :MIXED_2
+                        when [33, 3] then :MIXED_3
+                        when [5,  3] then :PRONOMINAL
                         end
                       end)
         end
@@ -163,7 +164,7 @@ module LLT
         end
 
         def self.positivus_ending(inflection_class, stem)
-          if inflection_class == 3
+          if inflection_class.to_s =~ /3/
             case stem
             when /nt$/     then :ER
             when /^facil$/ then :E
