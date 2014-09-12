@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe LLT::Constants::Endings do
-  let(:endings) { LLT::Constants::Endings }
+  let(:endings) { LLT::Constants::Endings::Latin }
 
   describe "::Noun" do
     describe ".get" do
